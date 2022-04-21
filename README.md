@@ -22,6 +22,6 @@ This will place `doc-monitor-host.sh`, `doc-monitor-config.sh`, and `doc-rm.sh` 
 
 Once running, two dotfiles will be generated for storing data. `.doc_mod_time` stores the most recent modification of any file on the server (local to the script). `.rmlist` stores files to be deleted from clients.
 
-![File diagram](https://zquint.xyz/images/docmon-host_diag.png/)
+![File diagram](https://zquint.xyz/images/docmon-host_diag.png)
 
 **Next, set up [doc-monitor-client](https://github.com/zqxyz/doc-monitor-client).**
