@@ -11,8 +11,9 @@ Before using this, consider that this was an educational exercise for me. It mee
 This is installed _before_ [doc-monitor-client](https://github.com/zqxyz/doc-monitor-client).
 
 ```
-git clone https://github.com/zqxyz/doc-monitor-host.git \
-bash install.sh
+git clone https://github.com/zqxyz/doc-monitor-host.git
+cd doc-monitor-host
+. install.sh
 ```
 This will place `doc-monitor-host.sh`, `doc-monitor-config.sh`, and `doc-rm.sh` into `/opt/doc-monitor`. You will be prompted to examine the minimal configuration. It will create a cronjob at boot time to run `doc-monitor-host.sh`. It will start `doc-monitor-host.sh` in the background.
 
