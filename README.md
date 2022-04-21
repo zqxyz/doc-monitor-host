@@ -11,10 +11,13 @@ Before using this, consider that this was an educational exercise for me. It mee
 This is installed _before_ [doc-monitor-client](https://github.com/zqxyz/doc-monitor-client).
 
 ```
+cd ~
 git clone https://github.com/zqxyz/doc-monitor-host.git
 cd doc-monitor-host
 . install.sh
+cd ../ && rm -rf doc-monitor-host
 ```
+
 This will place `doc-monitor-host.sh`, `doc-monitor-config.sh`, and `doc-rm.sh` into `/opt/doc-monitor`. You will be prompted to examine the minimal configuration. It will create a cronjob at boot time to run `doc-monitor-host.sh`. It will start `doc-monitor-host.sh` in the background.
 
 Once running, two dotfiles will be generated for storing data. `.doc_mod_time` stores the most recent modification of any file on the server (local to the script). `.rmlist` stores files to be deleted from clients.
