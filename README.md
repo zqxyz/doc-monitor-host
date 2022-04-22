@@ -31,3 +31,4 @@ Once running, two dotfiles will be generated for storing data. `.doc_mod_time` s
   - Option 1: register clients, and when all clients have rm'd file/dir, purge from rmlist
   - Option 2: purge rmlist entries after period of time (2 months?) or number of entries (2000?)
   - Option 3 (best option): Option 2 plus compare timestamp of file with same name with rmlist file timestamp, and if the rmlist timestamp is older, purge entry from rmlist and allow file to sync to server (and therefore to propagate to clients)
+- Facilitate renaming files
